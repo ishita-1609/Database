@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Home</title>
+
+   <link rel="icon" type="image/png" href="image/About.png">
+
+   <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+   <style>
+      * {
+         box-sizing: border-box;
+      }
+
+      body {
+         font-family: Arial, Helvetica, sans-serif;
+      }
+
+      /* Float four columns side by side */
+      .column {
+         float: left;
+         width: 25%;
+         padding: 0 10px;
+      }
+
+      /* Remove extra left and right margins, due to padding */
+      .row {margin: 0 -5px;}
+
+      /* Clear floats after the columns */
+      .row:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+
+      /* Responsive columns */
+      @media screen and (max-width: 600px) {
+         .column {
+            width: 100%;
+            display: block;
+            margin-bottom: 20px;
+         }
+      }
+
+      /* Style the counter cards */
+      .card {
+         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+         padding: 16px;
+         text-align: center;
+         background-color: #f1f1f1;
+      }
+
+      .card img {
+         width: 100%;
+         height: auto;
+      }
+
+      .card h1, .card h2 {
+         margin: 10px 0;
+      }
+   </style>
+</head>
+
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <a href="home.html" class="logo">One Heal</a>
+
+   <nav class="navbar">
+      <a href="home.html"><i class="fa fa-fw fa-home"></i>Home</a>
+      <a href="about.html"><i class="fa fa-fw fa-globe"></i>About</a>
+      <a href="book.html"><i class="fa fa-fw fa-user"></i>Register</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+</section>
+
+<!-- header section ends -->
+
+<img src="image/Mindfullness.jpeg" alt="Mindfulness">
+
+<section class="packages">
+   <div class="row">
+      <div class="column">
+         <div class="card">
+            <img src="image/Guided Meditation.jpeg" alt="Guided Meditation" width="175" height="175px">
+            <h1>Guided Meditation</h1>
+            <h2>Guided by: Dr. Agarwal</h2>
+         </div>
+      </div>
+
+      <div class="column">
+         <div class="card">
+            <img src="image/Unguided.jpeg" alt="Unguided Meditation" width="175" height="175px">
+            <h1>Unguided Meditation</h1>
+            <h2>Guided by: You</h2>
+         </div>
+      </div>
+
+      <div class="column">
+         <div class="card">
+            <img src="image/Yoga.jpeg" alt="Mindfulness Yoga" width="175" height="175px">
+            <h1>Mindfulness Yoga</h1>
+            <h2>Guided by: Dr. Bhandari</h2>
+         </div>
+      </div>
+
+      <div class="column">
+         <div class="card">
+            <img src="image/Anxiety.jpeg" alt="Meditation for Anxiety" width="175" height="175px">
+            <h1>Meditation for Anxiety</h1>
+            <h2>Guided by: Dr. Durjea</h2>
+         </div>
+      </div>
+   </div>
+</section>
+
+</body>
+</html>
